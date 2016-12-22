@@ -1,0 +1,46 @@
+<!-- HTML5 code-->
+<div class="container">Some random text BEFORE the video</div>
+
+<div class="container">
+    
+    <div class="your-centered-div">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8AT-nds1Q?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    
+</div>
+
+<div class="container">Some random text AFTER the video</div>
+
+<!--CSS key stuff-->
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    border: 2px solid red;
+}
+
+.your-centered-div img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    float: left;
+    border: 1px solid orange;
+}
+
+.your-centered-div {
+    max-width: 560px; /* you have to have a size or this method doesn't work */
+    max-height: 315px;
+    margin-right: auto;
+    margin-left: auto;
+}
