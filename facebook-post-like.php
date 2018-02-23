@@ -9,4 +9,7 @@
   ?>&layout=button_count&show_faces=false&width=350&height=35&appId=1405002166492976&size=large&amp;action=like&amp;colorscheme=dark"
   scrolling="no" frameborder="0" allowTransparency="true" >
   </iframe>
+  
+//share button example in your theme, open your single.php template file and add this where you want the link to appear:
+<a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink($post->ID)); ?>&t=<?php echo urlencode($post->post_title); ?>">Share on Facebook</a>
 ?>
